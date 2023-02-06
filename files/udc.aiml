@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+<!--any input-->
+  <category>
+    <pattern>*</pattern>
+    <template>
+        <video>https://i.makeagif.com/media/6-08-2016/7faOVF.mp4</video>
+        Type: 'hello computer' to begin...
+    </template>
+  </category>
+
+<!--introduction-->
+  <category>
+      <pattern>hello computer</pattern>
+      <template>
+          Welcome to the career advisor bot. Your strengths and preferences will 
+          be discovered as you select responses to the statements and questions 
+          found throughout this exercise. You will then be presented with one 
+          of five careers I feel fits what we've discovered about you with a 
+          link for further exploration.
+          <delay>3</delay>
+          The five careers explored herein are: Software Developer,	
+          Data Scientist, Network and Information Security Analyst,
+          Web Developer, and Database Administrator.
+          <delay>2</delay>
+          Please select the Begin button to begin.
+      <button>
+          <text>Begin</text>
+          <postback>codeislife</postback>
+      </button>
+      </template>
+  </category>
+
+<!--coding branch-->  
+  <category>
+      <pattern>codeislife</pattern>
+      <template>
+          To code or not to code...
+          <delay>2</delay>
+          <random>
+              <li><video>https://y.yarn.co/34d01e18-7d22-4d87-be50-c8ce9381fc7c_text.mp4</video></li><!--greetings programs-->
+              <li><video>https://y.yarn.co/b5eec78b-731a-4493-8394-0115eff2049d_text.mp4</video></li><!--the code please-->
+              <li><video>https://y.yarn.co/9116cddd-8524-4393-8c07-cf4d9b5ae417_text.mp4</video></li><!--code got weird-->
+              <li><video>https://y.yarn.co/c3a2a4d9-8e51-4546-af64-777f70012aaa.mp4</video></li><!--don't know the codes-->
+              <li><video>https://y.yarn.co/fa6e5589-4c61-45e3-a287-7d7a00da04a7_text.mp4</video></li><!--secret code-->
+          </random>
+          CODING IS LOVE, CODING IS LIFE!
+          <button>
+              <text>Love me some coding!</text>
+              <postback>languages</postback>
+          </button>
+          <button>
+              <text>It's not really my thing.</text>
+              <postback>nisanalyst</postback>
+          </button>
+      </template>
+  </category>
+
+<!--programing language branch-->
+  <category>
+      <pattern>languages</pattern>
+      <template>
+          Clickity-clack! Let's GO! But coding comes in many flavors... make your choice.
+          <delay>3</delay>
+          <random>
+              <li><video>https://y.yarn.co/82a994a3-4da9-4332-984e-17baa9db6d44_text.mp4</video></li><!--choose wisely-->
+              <li><video>https://y.yarn.co/94b7b275-c145-4b05-86a5-7a3d5dfb7f2e_text.mp4</video></li><!--choose the destructor-->
+              <li><video>https://y.yarn.co/b5db89c6-f8c4-4b9f-a131-c1db5fba29d1_text.mp4</video></li><!--easy choice-->
+              <li><video>https://y.yarn.co/bc686515-5ee7-42a7-851c-8310f6e74477_text.mp4</video></li><!--only choices-->
+              <li><video>https://y.yarn.co/d51528d2-7e1f-425b-93cb-5c483f541616_text.mp4</video></li><!--don't speak spanish-->
+          </random>
+          Which language sparks your joy?
+          <button>
+              <text>Python</text>
+              <postback>mathdata</postback>
+          </button>
+          <button>
+              <text>Java</text>
+              <postback>softwaredeveloper</postback>
+          </button>
+          <button>
+              <text>SQL</text>
+              <postback>analystvsdba</postback>
+          </button>
+          <button>
+              <text>HTML</text>
+              <postback>webdeveloper</postback>
+          </button>
+      </template>
+  </category>
+
+<!--python branch-->
+  <category>
+      <pattern>mathdata</pattern>
+      <template>
+          Python it is! But tell me...
+          <delay>2</delay>
+          <random>
+              <li><video>https://y.yarn.co/20e9a6fc-e101-4858-8e00-142743ce3393_text.mp4</video></li><!--math math math-->
+              <li><video>https://y.yarn.co/54f8bda3-fb3c-4eed-babc-6ef12e48a510_text.mp4</video></li><!--math is hard-->
+              <li><video>https://y.yarn.co/ba2082bf-8706-45de-976c-8d7d475d9c53_text.mp4</video></li><!--good at math-->
+              <li><video>https://y.yarn.co/375b1d0e-7d98-4696-91e3-034812bd1f71_text.mp4</video></li><!--graphs and charts-->
+              <li><video>https://y.yarn.co/bfbf46b7-4c50-4502-933d-22f37bc2b086_text.mp4</video></li><!--reveal your secrets-->
+          </random>
+          Do math and datasets really get you going?
+          <button>
+              <text>I crunch numbers and datasets for breakfast!</text>
+              <postback>datascientist</postback>
+          </button>
+          <button>
+              <text>Math? Ew, yuck. No thank you.</text>
+              <postback>softwaredeveloper</postback>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>analystvsdba</pattern>
+      <template>
+          Queries, queries, everywhere...
+          <delay>2</delay>
+          <random>
+              <li><video>https://y.yarn.co/3be196b7-dd32-4c3a-9893-0c22445ca1ff_text.mp4</video></li><!--database downloaded-->
+              <li><video>https://y.yarn.co/73d9e349-329e-48d8-887c-152868805eb8_text.mp4</video></li><!--what does it mean-->
+              <li><video>https://y.yarn.co/4ef761f0-8bc1-4ead-973e-e91d7baf0851_text.mp4</video></li><!--what does that mean-->
+              <li><video>https://y.yarn.co/bfbf46b7-4c50-4502-933d-22f37bc2b086_text.mp4</video></li><!--reveal your secrets-->
+              <li><video>https://y.yarn.co/691629a0-8b38-41d8-b9f1-e8adba5e4ce8_text.mp4</video></li><!--nice collection-->
+          </random>
+          What is it about data that makes you tick?
+          <button>
+              <text>Connecting the dots</text>
+              <postback>datascientist</postback>
+          </button>
+          <button>
+              <text>Keeping the dots inline</text>
+              <postback>dba</postback>
+          </button>
+      </template>
+  </category>
+  
+<!--careers section-->
+  <category>
+      <pattern>softwaredeveloper</pattern>
+      <template>
+          I hope you're 'agile' enough for this:
+          <delay>2</delay>
+          Based on your responses, it seems that a Software Developer would be 
+          a good fit for you. You'll probably be writing software in Python, 
+          Java, and/or C++. And you won't have to worry about too much math.
+          You can learn more about that field at the link below
+          <link>
+              <text>Software Development</text>
+              <url>https://en.wikipedia.org/wiki/Software_development</url>
+          </link>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>datascientist</pattern>
+      <template>
+          There must be some pattern to all this...
+          <delay>2</delay>
+          Based on your responses, it seems that a Data Scientist would be a 
+          good fit for you. Using Python/R and SQL to tease out the meaning in 
+          the data? Sign me up!
+          You can learn more about that field at the link below.
+          <link>
+              <text>Data Science</text>
+              <url>https://en.wikipedia.org/wiki/Data_science</url>
+          </link>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>nisanalyst</pattern>
+      <template>
+          I know, right!? Who wants carpal tunnel syndrome anyway...
+          <delay>2</delay>
+          Based on your response, it seems that a 
+          Network and Information Security Analyst would be a good fit for you. 
+          Entry-level positions require little to no programming experience.
+          You can learn more about that field at the link below
+          <link>
+              <text>Information Security</text>
+              <url>https://en.wikipedia.org/wiki/Information_security</url>
+          </link>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>webdeveloper</pattern>
+      <template>
+          That layout is so clean!
+          <delay>2</delay>
+          Based on your responses, it seems that a Web Developer would be a 
+          good fit for you. Don't let it get to you that some people think that 
+          HTML isn't a real coding language. You'll probably be using CSS and 
+          Javascript as well, making it more like 3 languages to only one.
+          You can learn more about that field at the link below
+          <link>
+              <text>Web Development</text>
+              <url>https://en.wikipedia.org/wiki/Web_design</url>
+          </link>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>dba</pattern>
+      <template>
+          Confidentiality. Integrity. Availability. These are your tenets.
+          <delay>2</delay>
+          Based on your responses, it seems that a Database Administrator would 
+          be a good fit for you. You'll be able to scratch that OCD itch of 
+          putting everything in its place, shipshape, and organized. 
+          You can learn more about that field at the link below
+          <link>
+              <text>Database Administration</text>
+              <url>https://en.wikipedia.org/wiki/Database_administration</url>
+          </link>
+      </template>
+  </category>
+  
+</aiml>
